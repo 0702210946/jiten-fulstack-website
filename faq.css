@@ -1,0 +1,132 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.faq h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.faq p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* FAQ Item */
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-item p {
+    font-size: 18px;
+    display: none; /* Initially hide answers */
+    margin-top: 10px;
+}
+
+/* Active FAQ Item */
+.faq-item.active p {
+    display: block; /* Show answer when active */
+}
+
+/* Hover Effects for FAQ Item */
+.faq-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and small laptops (up to 1024px) */
+@media (max-width: 1024px) {
+    .faq h1 {
+        font-size: 40px;
+    }
+
+    .faq-item h2 {
+        font-size: 22px;
+    }
+
+    .faq-item p {
+        font-size: 18px;
+    }
+}
+
+/* For smaller tablets and large phones (up to 768px) */
+@media (max-width: 768px) {
+    .faq h1 {
+        font-size: 36px;
+    }
+
+    .faq-item h2 {
+        font-size: 20px;
+    }
+
+    .faq-item p {
+        font-size: 16px;
+    }
+}
+
+/* For very small devices (phones up to 480px) */
+@media (max-width: 480px) {
+    .faq {
+        padding: 40px 10px;
+    }
+
+    .faq h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .faq p {
+        font-size: 14px;
+    }
+
+    .faq-item h2 {
+        font-size: 18px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+    }
+}

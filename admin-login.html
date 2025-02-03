@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Jiten Chemical Solutions</title>
+    <link rel="stylesheet" href="admin-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form onsubmit="return validateLogin(event)">
+            <label for="admin">Select Admin:</label>
+            <select id="admin" required>
+                <option value="" disabled selected>-- Select Admin --</option>
+                <option value="admin1@jitenchem.com">Admin 1</option>
+                <option value="admin2@jitenchem.com">Admin 2</option>
+                <option value="admin3@jitenchem.com">Admin 3</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p><a href="reset-password.html">Forgot Password?</a></p>
+    </div>
+
+    <script>
+        function validateLogin(event) {
+            event.preventDefault();
+
+            const admin = document.getElementById("admin").value;
+            const password = document.getElementById("password").value;
+
+            // Simulated admin credentials (Replace with database check)
+            const admins = {
+                "admin1@jitenchem.com": "admin123",
+                "admin2@jitenchem.com": "securepass",
+                "admin3@jitenchem.com": "mypassword"
+            };
+
+            if (admins[admin] && admins[admin] === password) {
+                window.location.href = "admin.html"; // Redirect to the Admin Dashboard
+            } else {
+                alert("Invalid admin or password!");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export and Bulk Orders - Jiten Chemical Solutions</title>
+    <link rel="stylesheet" href="exports.css">
+</head>
+<body>
+
+    <!-- Export and Bulk Orders Section -->
+    <section class="export" id="export">
+        <h1>Export & Bulk Orders</h1>
+        <p>At Jiten Chemical Solutions, we offer seamless export and bulk order services tailored to meet the unique needs of international and large-scale buyers. Whether you're ordering for industrial use or bulk purchasing for resale, we ensure timely delivery and competitive pricing.</p>
+
+        <div class="process">
+            <h2>How It Works</h2>
+            <ul>
+                <li><strong>Step 1:</strong> Contact us with your order details, including the chemicals required, quantity, and destination.</li>
+                <li><strong>Step 2:</strong> We provide you with a detailed quote, including shipping costs and estimated delivery time.</li>
+                <li><strong>Step 3:</strong> Confirm your order, make the payment, and we prepare your shipment.</li>
+                <li><strong>Step 4:</strong> Your order is shipped, and you receive tracking information for easy monitoring.</li>
+            </ul>
+        </div>
+
+        <div class="order-form">
+            <h2>Place Your Order</h2>
+            <form action="/submit-order" method="POST">
+                <div class="form-group">
+                    <label for="product">Select Chemical</label>
+                    <select id="product" name="product" required>
+                        <option value="chemical1">Chemical 1</option>
+                        <option value="chemical2">Chemical 2</option>
+                        <option value="chemical3">Chemical 3</option>
+                        <!-- Add more products as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity (in Liters/Kgs)</label>
+                    <input type="number" id="quantity" name="quantity" required min="1" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Shipping Destination</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jiten Chemical Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

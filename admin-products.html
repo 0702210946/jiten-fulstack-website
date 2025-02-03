@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products</title>
+    <link rel="stylesheet" href="admin-product.css">
+</head>
+<body>
+    <h2>Manage Products</h2>
+    
+    <!-- Product Form -->
+    <form id="productForm">
+        <input type="hidden" id="productId"> <!-- Hidden input for editing -->
+        <label>Product Name:</label>
+        <input type="text" id="productName" required>
+        
+        <label>Description:</label>
+        <textarea id="productDescription" required></textarea>
+        
+        <label>Price:</label>
+        <input type="number" id="productPrice" required>
+        
+        <label>Image URL:</label>
+        <input type="text" id="productImage" required>
+         
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- Product List Table -->
+    <h3>Product List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+            <!-- Products will be inserted here dynamically -->
+        </tbody>
+    </table>
+    
+    <script src="admin_product.js"></script>
+</body>
+</html>

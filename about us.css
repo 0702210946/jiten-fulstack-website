@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* About Us Section */
+.about-us {
+    background-image: url('about-background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Improved readability for the header */
+.about-us h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #003366; /* Dark blue for better contrast */
+    text-shadow: none; /* Remove any shadow that could cause faintness */
+}
+
+/* Improved readability for the paragraph */
+.about-us p {
+    font-size: 22px; /* Increased font size for better visibility */
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    color: #333333; /* Dark gray for better contrast */
+    text-shadow: none; /* Remove text shadow */
+}
+
+
+/* About Section Styling */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 40px 10px;
+    align-items: center;
+}
+
+.about-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background to improve text visibility */
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Improved contrast for paragraph text */
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333; /* Dark text for better contrast */
+}
+
+.about-image {
+    width: 40%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .about-us h1 {
+        font-size: 36px;
+    }
+
+    .about-us p {
+        font-size: 18px;
+    }
+}

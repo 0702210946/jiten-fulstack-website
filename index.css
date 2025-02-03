@@ -1,0 +1,269 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #333;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Introduction Section */
+.intro {
+    background-color: #f1faee;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.featured-products h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 2.5%;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f1faee;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.why-choose-us h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.why-choose-us p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-btn {
+    background-color: #f4a261;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e76f51;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .product {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .services {
+        padding: 20px;
+    }
+
+    .service-item {
+        width: 90%;
+    }
+
+    .cta-btn {
+        padding: 20px 40px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+}
